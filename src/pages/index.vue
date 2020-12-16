@@ -1,6 +1,6 @@
 <template>
   <div class="list">
-    <a href="/light" class="item">Three 离屏渲染</a>
+    <a href="/#/light" class="item">Three 离屏渲染</a>
   </div>
 </template>
 <script>
