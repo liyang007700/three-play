@@ -55,7 +55,7 @@ export default {
 
       const loader = new GLTFLoader();
       loader.load(
-        '/F-16D.gltf',
+        '/three-play/F-16D.gltf',
         ( gltf ) => {
           this.gltf = gltf.scene
           scene.add( this.gltf );
