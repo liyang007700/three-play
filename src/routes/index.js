@@ -7,7 +7,7 @@ const index = () =>
 const light = () =>
   import(
     /* webpackChunkName: "webgl_start" */
-    '../pages/light'
+    '../pages/offlineRender'
   )
   
 const routes = [
@@ -16,7 +16,7 @@ const routes = [
     component: index,
   },
   {
-    path: '/light',
+    path: '/offline-render',
     component: light,
   }
 ]
