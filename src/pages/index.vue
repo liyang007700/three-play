@@ -1,6 +1,7 @@
 <template>
   <div class="list">
-    <a href="/#/offline-render" class="item">Three 离屏渲染</a>
+    <a href="/#/render-target" class="item">render target</a>
+    <a href="/#/orbitControls" class="item">orbitControls</a>
   </div>
 </template>
 <script>

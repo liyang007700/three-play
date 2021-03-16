@@ -42,7 +42,7 @@ export default {
       camera = new THREE.PerspectiveCamera(60, el.clientWidth / el.clientHeight, 1, 1000)
       camera.position.set(0, 5, 20)
       scene.add(camera)
-      renderer = new THREE.WebGLRenderer()
+      renderer = new THREE.WebGLRenderer();
       renderer.physicallyCorrectLights = true;
       renderer.setClearColor(0xcccccc)
       renderer.setPixelRatio( window.devicePixelRatio );
@@ -75,6 +75,7 @@ export default {
       const light = new THREE.AmbientLight( 0xffffff, .5 ); // soft white light
       camera.add( light );
       this.addSkyBox();
+
       function animate() {    
 
         requestAnimationFrame( animate );
@@ -92,8 +93,6 @@ export default {
       scene.background = textureCube;
     },
     captureImage(type) {
-      const canvas2d = document.createElement('canvas')
-      document.body.appendChild(canvas2d);
       rt = new THREE.WebGLRenderTarget(el.clientWidth * 4, el.clientHeight * 4, {
         encoding: THREE.sRGBEncoding
       })
@@ -114,7 +113,9 @@ export default {
       
       composer1.renderToScreen = false
       composer1.render()
-      
+
+      const canvas2d = document.createElement('canvas')
+      document.body.appendChild(canvas2d);
       const width = el.clientWidth * 4
       const height = el.clientHeight * 4
       const preview = canvas2d;

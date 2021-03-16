@@ -4,20 +4,28 @@ const index = () =>
     /* webpackChunkName: "three_start" */
     '../pages/index'
   )
-const light = () =>
+const renderTarget = () =>
   import(
     /* webpackChunkName: "webgl_start" */
-    '../pages/offlineRender'
+    '../pages/renderTarget'
   )
-  
+const orbitControls = () =>
+  import(
+    /* webpackChunkName: "webgl_start" */
+    '../pages/orbitControls'
+  )
 const routes = [
   {
     path: '/',
     component: index,
   },
   {
-    path: '/offline-render',
-    component: light,
+    path: '/render-target',
+    component: renderTarget,
+  },
+  {
+    path: '/orbitControls',
+    component: orbitControls
   }
 ]
 export default new VueRouter({
