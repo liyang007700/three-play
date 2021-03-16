@@ -1,7 +1,7 @@
 <template>
   <div class="list">
-    <a href="/#/render-target" class="item">render target</a>
-    <a href="/#/orbitControls" class="item">orbitControls</a>
+    <a href="/three-play/#/orbitControls" class="item">render target</a>
+    <a href="/three-play/#/orbitControls" class="item">orbitControls</a>
   </div>
 </template>
 <script>
