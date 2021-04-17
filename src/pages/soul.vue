@@ -69,11 +69,10 @@ export default {
       controls.enableZoom = true;
       controls.dampingFactor = 0.05;
 
-      controls.screenSpacePanning = false;
-
       controls.minDistance = 250;
       controls.maxDistance = 300;
       controls.autoRotate = true
+      controls.enablePan = false
 
       const table = ["安妮","海瑟薇","霉霉","布兰妮","凯瑟琳","戴安娜",
       "赵露思","安妮","海瑟薇","霉霉","布兰妮","凯瑟琳","戴安娜",
