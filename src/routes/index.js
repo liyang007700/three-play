@@ -14,6 +14,11 @@ const orbitControls = () =>
     /* webpackChunkName: "webgl_start" */
     '../pages/orbitControls'
   )
+const soul = () =>
+  import(
+    /* webpackChunkName: "webgl_start" */
+    '../pages/soul'
+  )
 const routes = [
   {
     path: '/',
@@ -26,6 +31,10 @@ const routes = [
   {
     path: '/orbitControls',
     component: orbitControls
+  },
+  {
+    path: '/soul',
+    component: soul
   }
 ]
 export default new VueRouter({

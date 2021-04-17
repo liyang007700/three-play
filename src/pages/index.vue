@@ -2,6 +2,7 @@
   <div class="list">
     <a href="/three-play/#/orbitControls" class="item">render target</a>
     <a href="/three-play/#/orbitControls" class="item">orbitControls</a>
+    <a href="/three-play/#/soul" class="item">soul</a>
   </div>
 </template>
 <script>
